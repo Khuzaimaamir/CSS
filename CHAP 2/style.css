@@ -1,0 +1,21 @@
+
+.green{
+    background-color: greenyellow;
+    height: 100px;
+    width: 100px;
+    color: rgb(4, 4, 4);
+}
+.red{
+    background-color: red;
+    height: 90px;
+    color: aliceblue;
+}
+.pink{
+    background-color: pink;
+    height: 50px;
+    color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+}

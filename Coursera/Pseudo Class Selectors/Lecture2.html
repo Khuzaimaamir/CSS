@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: blueviolet;
+    }
+    header li:nth-child(1){
+        background-color: rgb(255, 68, 68);
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        border: 3px solid rgba(0, 0, 0, 0.833);
+        display: block;
+        text-align: center;
+        font-size: larger;
+        font-style: italic;
+    }
+    header li:nth-child(2){
+        background-color: rgb(65, 78, 255);
+        color: white;
+        border: 3px solid rgba(0, 0, 0, 0.833);
+        display: block;
+        text-align: center;
+        font-size: larger;
+        font-style: italic;
+    }
+    header li:nth-child(3){
+        background-color: rgb(247, 71, 244);
+        color: white;
+        border: 3px solid rgba(0, 0, 0, 0.833);
+        display: block;
+        text-align: center;
+        font-size: larger;
+        font-style: italic;
+    }
+     header li:nth-child(1):hover, header li:nth-child(3):active{
+         background-color: rgba(255, 0, 0, 0.947);
+         color: rgb(237, 237, 237);
+         border: 4px solid rgb(2, 202, 209);
+         font-size: larger ;
+         font-style: italic;
+         height: 30px;
+         justify-content:center;
+        }
+        header li:nth-child(2):hover, header li:nth-child(3):active{
+            background-color: rgb(20, 75, 255);
+            color: rgb(237, 237, 237);
+            border: 4px solid rgb(2, 202, 209);
+            font-size: larger ;
+            font-style: italic;
+            height: 30px;
+            justify-content:center;
+        }
+        header li:nth-child(3):hover, header li:nth-child(3):active{
+            background-color: rgb(255, 74, 156);
+            color: rgb(237, 237, 237);
+            border: 4px solid rgb(2, 202, 209);
+            font-size: larger ;
+            font-style: italic;
+            height: 30px;
+            justify-content:center;
+        }
+        
+        /* this means div ke baad ka nearest p pe ye apply kardo */
+        div>p{
+            background-color: rgb(183, 218, 207);
+            height: 50vh;
+            font-size: larger ;
+            font-style: italic;
+            justify-content:center;
+            text-align: center;
+        }
+        #heeehehe p{
+            background-color: rgb(255, 245, 107);
+            text-align: center;
+            height: 50vh;
+            font-size: larger ;
+            font-style: italic;
+            justify-content:center;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+</style>
+<header>
+    <ol>
+        <li><a href="https://www.youtube.com/">YouTube</a></li>
+        <li><a href="https://www.facebook.com/">facebook</a></li>
+        <li><a href="https://www.instagram.com/">instagram</a></li>
+    </ol>
+</header>
+<body>
+    <article id="heeehehe"><p>hehehehehe</p></article>
+    <div><div><div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis perferendis autem, nihil nostrum recusandae non saepe sapiente odio delectus at soluta nemo sit quod quidem sequi. Distinctio nisi velit ratione.</p></div></div></div>
+</body>
+</html>

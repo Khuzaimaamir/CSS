@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        header{
+            height: 42px;
+            background-color: rgb(45, 45, 45);
+        }
+        main{
+            height:899px;
+            background-color: rgb(20, 6, 82);
+        }
+        .progress{
+            background-color: red;
+            height: 1px;
+            animation: load 1s ease-in-out  1;
+        }
+        img{
+            animation: rotate 0.2s ease-in-out infinite;
+            padding: 50px;
+            height: 10px;
+            width: 90px;
+        }
+    @keyframes rotate{
+        0%{
+            transform:rotate(0deg)
+        }
+        50%{
+            transform:rotate(180deg)
+        }
+        100%{
+            transform:rotate(360deg)
+        }
+    }
+    @keyframes load{
+        0%{
+            width:0;
+        }
+        50%{
+            width:60vw;
+        }
+        100%{
+            width: 100vw;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="progress"></div> 
+    </header>
+    <main>
+        <img src="img1.jpg">
+        </main>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        body{
+            background-color: rgb(50, 12, 12);
+        }
+        li{
+            display: inline;
+            list-style: circle;
+            list-style-image: -moz-radial-gradient();
+        }
+        header{
+            background-color: black;
+            color: aliceblue;
+            height: 5vh;
+            position: sticky;
+            /* z index jiska ziada hoga vo sab pe overlay karega */
+            z-index: 1;
+        }
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+    .box1{
+        height: 180vh;
+        width: 50vw;
+        margin: auto;
+        background-color: aqua;
+        /* position: relative; */
+        /* position: absolute; */
+        /* can move the container */
+        /* top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0; */
+    }
+    .box2{
+        background-color: rgb(81, 0, 255);
+        height: 10vh;
+        width: 10vw;
+        margin: auto;
+        /* position: relative; */
+        position: absolute;
+        /* can move the container  */
+        /* top: 0; */
+        /* right: 0; */
+        left: 0;
+        bottom: 0;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+    <div class="box1">
+        <p1>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa doloremque, recusandae nostrum eligendi hic quis rem dolorum saepe. Distinctio vel tempore temporibus magni!
+        </p1>
+    <div class="box2">
+        <p>
+            Lorem ipsum dolor sit amet consectetur
+        </p>
+    </div></div>
+</body>
+</html>

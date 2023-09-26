@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p2</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .progress{
+            background-color: red;
+            height: 1px;
+            animation: load 1s ease-in-out  1;
+        }
+        .slider{
+            background-color: rgb(255, 255, 255);
+            height: 40vh;
+            width: 40vw;
+            overflow: hidden;
+            margin: auto;
+            display: flex;
+        }
+        img{
+            display: block;
+            margin: auto;
+        }
+        header{
+            background-color: black;
+            height: 40px;
+        }
+         .img2{
+            transform: translate(0vw);
+        }
+        .img3{
+            transform: translate(0vw);
+        }
+        .img4{
+            transform: translate(0vw);
+        }  
+        main{
+            background-color: rgb(68, 68, 161);
+        }
+        .rotating{
+            animation: rotate 0.2s ease-in-out infinite;
+            padding: 50px;
+            height: 10px;
+            width: 90px;
+        }
+        .rotating img{
+            height: 23px;
+            width: 9px;
+        }
+        @keyframes load{
+        0%{
+            width:0;
+        }
+        50%{
+            width:60vw;
+        }
+        100%{
+            width: 100vw;
+        }
+        }
+
+        @keyframes rotate{
+        0%{
+            transform:rotate(0deg)
+        }
+        50%{
+            transform:rotate(180deg)
+        }
+        100%{
+            transform:rotate(360deg)
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="progress"></div> 
+    </header>
+    <main>
+        <div class="rotating">
+            <img src="img1.jpg">
+        </div>
+        <div class="slider"><img src="img2.jpg"></div>
+        <div class="slider"><img src="img3.jpg"></div>
+        <div class="slider"><img src="img4.jpeg"></div>
+    </main>
+</body>
+</html>

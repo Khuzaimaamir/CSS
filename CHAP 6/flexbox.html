@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body{
+             background-color: rgb(129, 170, 156);
+        }
+        .container{
+            height: 150vh;
+            display: flex;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row; */
+            flex-wrap: wrap;
+            justify-content: center;
+            /* use only one align */
+            /* align-content:center; */
+            align-items: center;
+        }
+        .box1{
+            height: 234px;
+            width: 335px;
+            background-color: fuchsia;
+            color: aliceblue;
+            border: 2px solid rgb(2, 2, 1);
+            /* align-self: flex-start; */
+            flex-grow: 3;
+        }
+        .box2{
+            height: 234px;
+            width: 335px;
+            background-color: rgb(43, 97, 135);
+            color: rgb(0, 0, 0);
+            border: 2px solid rgb(0, 0, 0);
+        }
+        .box3{
+            height: 234px;
+            width: 335px;
+            background-color: rgb(251, 255, 0);
+            color: rgb(0, 0, 0);
+            border: 2px solid rgb(0, 0, 0);
+        }
+        .box4{
+            height: 234px;
+            width: 335px;
+            background-color: rgb(216, 45, 45);
+            color: rgb(0, 0, 0);
+            border: 2px solid rgb(0, 0, 0);
+            /* flex-grow: 1; */
+            flex-shrink: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+</body>
+</html>
